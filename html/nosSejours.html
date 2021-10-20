@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Nos Séjours</title>
+    <script src="https://kit.fontawesome.com/dfdc9cd89e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img src="../assets/img/head.png" alt="header">
+    </header>
+    <nav>
+        <a href="../index.html" target="_self"> Accueil </a>
+        <a class="nav-a"></a>
+        <a href="nosSejours.html"  target="_self"> Nos Séjours </a>
+        <a class="nav-a"></a>
+        <a href="offres.html"  target="_self"> Offres </a>
+        <a class="nav-a"></a>
+        <a href="nousContacter.html"  target="_self"> Nous Contacter </a>
+        <a class="nav-a"></a>
+        <a href="espaceClient.html"  target="_self"> Espace client </a>
+    </nav>
+    <section class="bodyNosSejour">
+        <h1>Trouvez votre séjour</h1>
+    <div id="stay">
+        <div id ="filter">
+            <h2>Affiner votre recherche</h2>
+            <form method="post" action="#">
+                <fieldset class="region">
+                    <legend class="regionTitle">Région</legend>
+                    <ul id="regionChoice">
+                        <li><input type="checkbox" id="auvergneRhoneAlpes" name="auvergneRhoneAlpes"><label for="auvergneRhoneAlpes">Auvergne-Rhône-Alpes</label></li>
+                        <li><input type="checkbox" id="bourgogneFrancheComte" name="bourgogneFrancheComte"><label for="bourgogneFrancheComte">Bourgogne-Franche-Comté</label></li>
+                        <li><input type="checkbox" id="bretagne" name="bretagne"><label for="bretagne">Bretagne</label></li>
+                        <li><input type="checkbox" id="CentreValDeLoire" name="CentreValDeLoire"><label for="CentreValDeLoire">Centre-Val de Loire</label></li>
+                        <li><input type="checkbox" id="corse" name="corse"><label for="corse">Corse</label></li>
+                        <li><input type="checkbox" id="grandEst" name="grandEst"><label for="bFC">Grand Est</label></li>
+                        <li><input type="checkbox" id="ileDeFrance" name="ileDeFrance"><label for="ileDeFrance">Île-de-France</label></li>
+                        <li><input type="checkbox" id="normandie" name="normandie"><label for="normandie">Normandie</label></li>
+                        <li><input type="checkbox" id="nouvelleAquitaine" name="nouvelleAquitaine"><label for="nouvelleAquitaine">Nouvelle-Aquitaine</label></li>
+                        <li><input type="checkbox" id="bFC" name="occitanie"><label for="occitanie">Occitanie</label></li>
+                        <li><input type="checkbox" id="paysDeLaLoire" name="paysDeLaLoire"><label for="paysDeLaLoire">Pays de la Loire</label></li>
+                        <li><input type="checkbox" id="provenceAlpesCoteDAzur" name="provenceAlpesCoteDAzur"><label for="provenceAlpesCoteDAzur">Provence-Alpes-Côte d'Azur</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset class="thematic">
+                    <legend class="thematicTitle">Thématique</legend>
+                    <ul id="thematicChoice">
+                        <li><input type="checkbox" id="culture" name="culture"><label for="culture">Culture</label></li>
+                        <li><input type="checkbox" id="gastronomy" name="gastronomy"><label for="gastronomy">Gastronomie</label></li>
+                        <li><input type="checkbox" id="unusualPlace" name="unusualPlace"><label for="unusualPlace">Lieu insolite</label></li>
+                        <li><input type="checkbox" id="romantic" name="romantic"><label for="romantic">Romantique</label></li>
+                        <li><input type="checkbox" id="strongFeeling" name="strongFeeling"><label for="strongFeeling">Sensation Forte</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset class="price">
+                    <legend class="priceTitle">Prix</legend>
+                    <input type="range" id="price" name="price" min="0" max="500" list="tickmarks"><label for="price">€€€</label>
+                </fieldset>
+                <div>
+                <input type="submit" value="Appliquer mes filtres" id="submit"/>
+                <input type="reset" value="Effacer les filtres" id="reset" />
+                </div>
+            </form>
+        </div>
+
+        <div id="allOffers">
+            <a href="escapadeenbretagne.html">
+                <div class="offer">
+                    <img src="../assets/img/bretagne.gif" alt="Bretagne" />
+                    <div class="descriptionOffer">
+                        <h3>Escapade en Bretagne</h3>
+                        <p>Laissez-vous conter le Kalon-Breizh ! Baladez-vous dans une nature préservée et mystérieuse, 
+                       berceau de nombreuses légendes bretonnes, et remontez les traces d’un passé pas si lointain.</p>
+                        <p><i class="fas fa-place-of-worship"></i>&nbsp;Bretagne&nbsp;
+                            <i class="fas fa-landmark"></i>&nbsp;Culture&nbsp;
+                            <i class="fas fa-hamburger"></i>&nbsp;Gastronomie&nbsp;
+                            <i class="fas fa-coins"></i>&nbsp;A partir de 350€</p>
+                    </div>
+                </div>
+            </a>
+            <a href="thalasso.html">
+                <div class="offer">
+                    <img src="../assets/img/thalasso.gif" alt="Thalasso" />
+                    <div class="descriptionOffer">
+                        <h3>Séjour Thalasso</h3>
+                        <p>Nous proposons l’offre personnalisable la plus large du marché. Les prestations thalasso sont sélectionnées 
+                        avec soin par nos experts auprès d’établissements reconnus pour leur professionnalisme et la qualité de leurs produits.</p>
+                        <p><i class="fas fa-place-of-worship"></i>&nbsp;Auvergne-Rhône-Alpes&nbsp;
+                            <i class="fas fa-heart"></i>&nbsp;Romantique&nbsp;
+                            <i class="fas fa-coins"></i>&nbsp;A partir de 350€</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="offer">
+                    <img src="../assets/img/chateaux.gif" alt="Chateaux" />
+                    <div class="descriptionOffer">
+                        <h3>Sur les traces des châteaux isariens</h3>
+                        <p>Cette escapade vous permettre de découvrir les châteaux de l'Oise. 
+                        Le cadre est idyllique pour des moments romantiques à l'occasion d'un 
+                        week-end en amoureux ou pour les amateurs de lieux gorgés d'histoire </p>
+                        <p><i class="fas fa-place-of-worship"></i>&nbsp;Hauts-deFrance&nbsp;
+                            <i class="fas fa-landmark"></i>&nbsp;Culture&nbsp;
+                            <i class="fas fa-coins"></i>&nbsp;A partir de 350€</p>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <div class="offer">
+                    <img src="../assets/img/camargue.gif" alt="Camargue" />
+                    <div class="descriptionOffer">
+                        <h3>A la découverte de la Camargue</h3>
+                        <p>En bord de mer ou d'un étang, dans un village typique ou au calme dans les terres. 
+                        En solo, en famille ou en groupe, vous trouverez à coup sûr votre coin de paradis 
+                        pour passer le plus beau des séjours en Camargue.</p>
+                        <p><i class="fas fa-place-of-worship"></i>&nbsp;Provence Alpes Côte D'Azur &nbsp;
+                            <i class="far fa-grin-stars"></i>&nbsp;Sensation Forte&nbsp;
+                            <i class="far fa-surprise"></i>&nbsp;Lieu insolite&nbsp;
+                            <i class="fas fa-coins"></i>&nbsp;A partir de 350€</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <a href="../index.html" target="_self"> Accueil </a>
+            <a href="nosSejours.html"  target="_self"> Nos Séjours </a>
+            <a href="offres.html"  target="_self"> Offres </a>
+            <a href="nousContacter.html"  target="_self"> Nous Contacter </a>
+            <a href="espaceClient.html" target="_self"> Espace client </a>
+        </div>
+        <hr class="linenav" />
+        <div class="footer">
+            <a href=""><img src="../assets/img/Facebook.png" title="Facebook" /></a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="aProposDeNous.html">A PROPOS DE NOUS</a>
+            <a href="mentionsLegales.html">MENTIONS LEGALES</a>
+            <a href=""><img src="../assets/img/4102579_applications_instagram_media_social_icon.png" title="Instagram" /></a>
+        </div>
+        <hr class="linefoot" />
+        <div class="footer">
+            <a id="copyright">copyright © 2021. Tous droit réservés LA MANU VOYAGE</a>
+        </div>
+        <p id="signing"> Développé par KR.JMM</p>
+    </footer>
+</body>
+</html>
